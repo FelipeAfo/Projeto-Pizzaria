@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto' ;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header {
+    background-color: #242323;
+    padding: 6px;
+   
+    align-items: center; /* Alinhar verticalmente os itens (logo e links) */
+  }
+  
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px; /* Ajuste a altura da logo conforme necessário */
+    /* Se a largura da imagem não for fixa, ela se ajustará automaticamente à altura definida */
+  }
+
+  .logo h3{
+    color: white;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    padding-top: 6px;
+  }
+  
+  nav li {
+    margin-right: 15px; /* Espaçamento entre os links */
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* Remover o espaçamento do último link */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fffdfd;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para os links quando o mouse passa sobre eles */
+  nav a:hover {
+    color:#ffc506 ;
+    border-bottom: 4px solid #ffc506;
+  }
+
+  .primeira-section{
+    height: 97vh;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(rgba(29, 29, 29,0.8), rgba(29, 29, 29,0.8)),  url(imagens/pizza\ banner\ 1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    background-attachment: fixed;
+  }
+
+  .primeira-section-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .primeira-section-con h1{
+    color: #ffc506;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .primeira-section-con h2{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 430px){
+    .primeira-section-con h1{
+      font-size: 3rem;
+    }
+
+    .primeira-section-con h2{
+      font-size: 1.5rem;
+    }
+
+    button a {
+      font-size: 10px
+    }
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 38px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: #ffc506;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.15s linear;
+   }
+
+   button a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+   }
+   
+   button:hover{
+    background-color: rgba(29, 201, 160, 0.08);
+    border-color: #ffc506;
+    color: #ffc506;
+    transform: translateY(-5px) scale(1.05);
+   }
+   
+   button:active {
+    background-color: transparent;
+    border-color: #ffc506;
+    color: #ffc506;
+    transform: translateY(5px) scale(0.95);
+   }
+   
+   button:disabled {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #8E8E93;
+    border-color: #8E8E93;
+   }
+   
+   .segunda-section{
+    height: 60vh;
+   background-color: #242323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+   }
+
+   .segunda-section img{
+    height: 290px;
+    margin-left: 40px;
+    margin-top: 60px;
+    border: 2px solid rgba(155, 155, 155)
+   }
+
+   .segunda-section-con{
+    max-width: 600px;
+   }
+
+   .segunda-section-con h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+   }
+
+   .segunda-section-con p{
+    font-size: 18px;
+    text-align: center;
+   }
+
+   @media screen and (max-width: 850px){
+    .segunda-section{
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .segunda-section img{
+      margin-left: 0;
+    }
+
+    .segunda-section-con p{
+      font-size: 16px;
+      padding:0 40 0 40px ;
+    }
+   }
